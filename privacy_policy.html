@@ -1,68 +1,100 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Custom Emojis</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h1, h2 {
-            color: #333;
-        }
-        p {
-            color: #555;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>Privacy Policy · Custom Emoji</title>
+  <style>
+    :root { color-scheme: dark; --bg:#09090b; --panel:#17171c; --text:#f7f7fa; --muted:#aaaab4; --accent:#ff5c8a; --border:#303038; }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    main { width:min(820px,calc(100% - 36px)); margin:0 auto; padding:72px 0 96px; }
+    .eyebrow { color:var(--accent); font-weight:800; letter-spacing:.08em; text-transform:uppercase; font-size:13px; }
+    h1 { margin:8px 0 8px; font-size:clamp(38px,7vw,58px); line-height:1.04; letter-spacing:-.045em; }
+    h2 { margin:48px 0 12px; font-size:25px; letter-spacing:-.02em; }
+    h3 { margin:28px 0 8px; font-size:19px; }
+    p, li { color:var(--muted); }
+    strong, a { color:var(--text); }
+    a { text-decoration-color:var(--accent); text-underline-offset:3px; }
+    .summary { margin:30px 0 8px; padding:22px 24px; border:1px solid var(--border); border-radius:20px; background:var(--panel); }
+    .summary p { margin:0; }
+    ul { padding-left:22px; }
+    footer { margin-top:64px; padding-top:24px; border-top:1px solid var(--border); color:var(--muted); }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <h2>Custom Emojis AI - Keyboard</h2>
-    <p><strong>Last Updated:</strong> 2025.03.01</p>
-    
-    <h2>1. Introduction</h2>
-    <p>This Privacy Policy explains how <strong>Custom Emojis - Emoji Keyboard</strong> (the “App”) collects, uses, and protects user data. By downloading and using the App, you agree to the terms outlined in this policy.</p>
-    
-    <h2>2. Information We Collect</h2>
-    <p>The App may collect the following types of information:</p>
-    <ul>
-        <li><strong>Personal Information:</strong> We do not collect personally identifiable information such as names, emails, or addresses.</li>
-        <li><strong>Usage Data:</strong> We may collect anonymous usage statistics to improve the App’s functionality.</li>
-        <li><strong>Keyboard Input:</strong> The App does not store, transmit, or access any keyboard input outside of custom emoji usage.</li>
-    </ul>
-    
-    <h2>3. How We Use Your Information</h2>
-    <p>We use collected data solely for the following purposes:</p>
-    <ul>
-        <li>Improving user experience and app functionality</li>
-        <li>Enhancing emoji-related features</li>
-        <li>Preventing bugs and technical issues</li>
-    </ul>
-    
-    <h2>4. Access to Photo Library</h2>
-    <p>The App may request access to your photo library for the following purpose:</p>
-    <ul>
-        <li>Allowing users to create custom emojis using their own images.</li>
-        <li>Providing a seamless experience by selecting images directly from the photo library.</li>
-    </ul>
-    <p>The App does not store, share, or transmit your photos beyond your device. All image processing occurs locally on your device.</p>
-    
-    <h2>5. Data Sharing & Third Parties</h2>
-    <p>We do not sell, trade, or share your personal data with third parties. However, we may use third-party analytics services to monitor app performance.</p>
-    
-    <h2>6. Data Security</h2>
-    <p>We take reasonable measures to protect your data from unauthorized access, but no online service is 100% secure.</p>
-    
-    <h2>7. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy occasionally. Continued use of the App after changes indicates acceptance of the updated policy.</p>
-    
-    <h2>8. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:ai.key.creator@gmail.com">ai.key.creator@gmail.com</a>.</p>
+<main>
+  <div class="eyebrow">Custom Emoji</div>
+  <h1>Privacy Policy</h1>
+  <p><strong>Effective date:</strong> August 30, 2026</p>
+  <div class="summary"><p>AICreator PTY LTD (“we,” “us,” or “our”) provides the Custom Emoji app (“the App”). This policy explains what information is processed when you use the App and how it is used.</p></div>
+
+  <h2>Information We Process</h2>
+
+  <h3>AI Emoji Creation</h3>
+  <p>When an eligible subscriber enters a description and taps Generate, the App sends the description (“prompt”) and an anonymous RevenueCat App User ID over HTTPS to our Cloudflare Worker.</p>
+  <p>The Worker uses the anonymous ID to verify subscription access with RevenueCat. It stores a SHA-256 hash derived from the RevenueCat ID together with a daily generation count to enforce the generation limit. This quota record expires automatically no later than approximately 48 hours after it is created.</p>
+  <p>After access is verified, the Worker sends the prompt, but not the RevenueCat App User ID, to OpenAI to generate the image. OpenAI may retain API prompts and generated responses for abuse monitoring for up to 30 days under its default API data controls. OpenAI states that API data is not used to train its models unless the API customer explicitly opts in to data sharing.</p>
+  <p><strong>Do not include personal, confidential, sensitive, or identifying information in a generation prompt.</strong></p>
+
+  <h3>Subscriptions and Purchases</h3>
+  <p>We use RevenueCat to display subscription offerings, validate and restore purchases, determine access to AI generation, prevent fraud, and analyze subscription performance.</p>
+  <p>RevenueCat generates a random anonymous App User ID because the App does not provide a user account or login. RevenueCat may process the anonymous ID, Apple receipt and purchase history, subscription and entitlement status, product information, device type, operating system, locale, currency, and last-seen information. We do not intentionally send your name or email address to RevenueCat.</p>
+
+  <h3>Analytics and Technical Data</h3>
+  <p>We use Firebase Analytics to understand use of the App and improve its features. Firebase may process an app-instance identifier, the Identifier for Vendor (IDFV), general location derived from a masked IP address, app and device information, app lifecycle and session events, purchase or subscription events, and interactions such as app opens, menu selections, pack views, and emoji popup views.</p>
+  <p>The current iOS build does not include Firebase’s advertising-ID collection capability. We do not use IDFA, display third-party advertising, sell personal information, or use App data for cross-app tracking.</p>
+  <p>Cloudflare processes network and request metadata needed to operate and protect the generation service, which may include IP address, request URL and method, status, timing, traffic-routing information, and related diagnostics. Persistent Worker invocation logs may be retained for up to seven days. Our Worker code does not intentionally add prompts, generated images, RevenueCat IDs, or credentials to application logs.</p>
+  <p>This page is hosted using GitHub Pages. GitHub may receive standard web request information when this page is opened.</p>
+
+  <h3>Information Stored on Your Device</h3>
+  <p>Generated emoji images, their prompt text and creation date, favorites, and onboarding preferences are stored locally on your device. They are not synchronized to an account or cloud database by the App.</p>
+  <p>When you choose Save, the App writes the selected emoji or sticker to your Photos library. The current App does not import or upload your existing photos. Deleting the App and its data removes the App’s local collection, but copies previously saved to Photos remain until you delete them from Photos.</p>
+  <p>When you choose Share, iOS sends the selected image to the destination you choose. That destination’s privacy practices then apply.</p>
+
+  <h3>Support Communications</h3>
+  <p>If you contact us by email, we receive the email address, message, and any information you choose to include. We use this information only to respond to and manage your request.</p>
+
+  <h2>Service Providers</h2>
+  <p>We use the following service providers:</p>
+  <ul>
+    <li>Google Firebase for product analytics and related diagnostics</li>
+    <li>RevenueCat for subscription and purchase management</li>
+    <li>Cloudflare for the generation API, quota storage, security, and operational logs</li>
+    <li>OpenAI for AI image generation</li>
+    <li>GitHub Pages for hosting this privacy page</li>
+    <li>Apple for in-app purchases, Photos access, and the iOS share sheet</li>
+  </ul>
+  <p>These providers process information under their own terms and privacy policies and may process information in countries other than your country of residence, including the United States.</p>
+
+  <h2>Retention</h2>
+  <p>Local data remains on your device until you delete it or remove the App. Cloudflare quota records expire within approximately 48 hours, and Worker invocation logs may remain for up to seven days. OpenAI’s default abuse-monitoring retention may be up to 30 days. Firebase and RevenueCat retain information according to our service settings, their agreements with us, and applicable legal requirements. Support emails are retained only as long as reasonably necessary to handle the request and meet legal obligations.</p>
+
+  <h2>Your Choices and Rights</h2>
+  <p>You may:</p>
+  <ul>
+    <li>delete individual generated emojis from My Custom Emoji;</li>
+    <li>remove the App and its local data;</li>
+    <li>delete separately saved images from Photos;</li>
+    <li>change Photos permission in iOS Settings;</li>
+    <li>manage or cancel subscriptions through your Apple account; and</li>
+    <li>contact us to request access, correction, or deletion where applicable law provides those rights.</li>
+  </ul>
+  <p>We may need information sufficient to locate the relevant anonymous record before fulfilling a request.</p>
+
+  <h2>Children</h2>
+  <p>We do not knowingly ask children to provide names, contact details, or account information. Users should not place personal information in AI prompts. A parent or guardian who believes a child submitted personal information may contact us to request review or deletion.</p>
+
+  <h2>Security</h2>
+  <p>We use reasonable technical and organizational safeguards, including encrypted HTTPS transmission. No service can guarantee absolute security.</p>
+
+  <h2>Changes to This Policy</h2>
+  <p>We may update this policy when the App, service providers, or legal requirements change. We will post the revised effective date on this page.</p>
+
+  <h2>Contact</h2>
+  <p>Questions or privacy requests may be sent to <a href="mailto:ai.key.creator@gmail.com">ai.key.creator@gmail.com</a>.</p>
+  <footer>AICreator PTY LTD · Custom Emoji</footer>
+</main>
 </body>
 </html>
